@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUI DHAAGA</title>
+    <link rel="stylesheet" href="front.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <!-- nav bar and cover -->
+        <header>
+
+            <div class="bar">
+                <nav>
+                    <div class="logoplace">
+                        <div class="logo"></div>
+                    </div>
+                    <div class="search">
+                        <input placeholder="Search Your Style" type="text" class="search_box">
+                        <div class="search_icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <a href="#">Home</a>
+                        <a href="#">Wish List</a>
+                        <a href="cart.html" target="_self"> <i
+                                class="fa-solid fa-cart-arrow-down"></i> Cart</a>
+                        <a href="#">Orders</a>
+                        <a href="login.html" target="_self">Login</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="wrap">
+                <img src="back.png" alt="error" id="back">
+        
+                <div class="gallery">
+                    <div style="width: 100%;">
+                        <a href="#s2" style="cursor: pointer;"><img src="cover3.jpg" alt="error"></a>
+                    </div>
+                    <div style="width: 100%;">
+                        <a href="#s1" style="cursor: pointer;"><img src="scroll2.png" alt="error"></a>
+                    </div>
+                    <div style="width: 100%;">
+                        <img src="scroll3.png" alt="errpr">
+                    </div>
+                </div>
+        
+                <img src="next.png" alt="error" id="next">
+            </div>
+            <script>
+                let scrollContainer=document.querySelector(".gallery");
+                let back=document.getElementById("back")
+                let next=document.getElementById("next")
+        
+                next.addEventListener("click",()=> {
+                    scrollContainer.scrollLeft +=900;
+                })
+                back.addEventListener("click",()=> {
+                    scrollContainer.scrollLeft -=900;
+                })
+            </script>
+        </header>
+
+        <!-- mens section -->
+
+        <section class="s1" id="s1">
+            <div class="cards">
+                <div class="image">
+                    <img src="pic1.jpg">
+                </div>
+                <div class="btn">
+                    <a href="m1.html"><button type="button">Shop Now</button></a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="image">
+                    <img src="pic2.png">
+                </div>
+                <div class="btn">
+                    <button type="button">Shop Now</button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="image">
+                    <img src="pic3.png">
+                </div>
+                <div class="btn">
+                    <button type="button">Shop Now</button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="image">
+                    <img src="pic4.png">
+                </div>
+                <div class="btn">
+                    <button type="button">Shop Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- women section -->
+
+        <section class="s2" id="s2">
+            <div class="cards">
+                <div class="image">
+                    <img src="w1.png">
+                </div>
+                <div class="btn">
+                    <a href="w1.html"><button type="button">Shop Now</button></a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="image">
+                    <img src="w2.png">
+                </div>
+                <div class="btn">
+                    <button type="button">Shop Now</button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="image">
+                    <img src="w3.png">
+                </div>
+                <div class="btn">
+                    <button type="button">Shop Now</button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="image">
+                    <img src="w4.png">
+                </div>
+                <div class="btn">
+                    <button type="button">Shop Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- children section -->
+
+        <section class="s3">
+            <div class="cards">
+                <div class="image">
+                    <img src="ch1.png">
+                </div>
+                <div class="btn">
+                    <button type="button">Shop Now</button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="image">
+                    <img src="ch2.png">
+                </div>
+                <div class="btn">
+                    <button type="button">Shop Now</button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="image">
+                    <img src="ch3.png">
+                </div>
+                <div class="btn">
+                    <button type="button">Shop Now</button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="image">
+                    <img src="ch4.png">
+                </div>
+                <div class="btn">
+                    <button type="button">Shop Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- end -->
+    </main>
+
+    <footer>
+        <div class="end_header">
+            <ul>
+                <p>Get to Know Us</p>
+                <a href="*">About Us</a>
+                <a href="*">Careers</a>
+                <a href="*">Press Releases</a>
+                <a href="*">Amazon Science</a>
+            </ul>
+            <ul class="Connect">
+                <p>Connect with Us</p>
+                <a href="*"><i class="fa-brands fa-twitter"></i></a>
+                <a href="*"><i class="fa-brands fa-facebook"></i></a>
+                <a href="*"><i class="fa-brands fa-instagram"></i></a>
+            </ul>
+            <ul>
+                <p>CUSTOMER POLICIES</p>
+                <a href="*">FAQ</a>
+                <a href="*">T&C</a>
+                <a href="*">Track Orders</a>
+                <a href="*">Cancellation</a>
+                <a href="*">Returns</a>
+                <a href="*">Privacy Policy</a>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
